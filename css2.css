@@ -1,0 +1,158 @@
+body
+{
+background-image: url("background.jpg"); /* Sets the background to an image */
+background-repeat: no-repeat;            /* Does not repeat, helps with making it static */
+background-attachment: fixed;            /* Sets image to static */
+background-size: cover;                  /* Makes the background fill the screen*/
+}
+
+@font-face {                            /* Imports the saved ttf file, adding the font wanted*/
+    font-family: 'vtks_madalenaregular';
+    src: url('fonts/vtks_madalena.ttf');
+    font-weight: lighter;
+    font-style: lighter;
+
+}
+
+h1 {                                        /* Style of the heading (CRAIGSLIST) */
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 150px;
+color: rgba(8, 8, 8, 0.945);
+text-align: center;
+font-family: vtks_madalenaregular;
+text-decoration: none;
+}
+
+hr {                                        /* Adds a horizontal line*/
+    display: block;
+    height: 1px;
+    border: 1px;
+    border-top: 1px solid #ccc;
+    margin: 1px;
+    padding: 3px;                             /* Changes the thickness of the line*/
+    background-color:black;               /* Sets the color of the line*/
+}
+
+.headcontainer {
+    display: flex;
+}
+
+.signin {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+.button {
+    text-decoration: none;
+}
+
+.space {
+    flex: 10;
+}
+
+.date {
+    flex: 1;
+    text-align: center;
+}
+.smallheading {
+    flex: 1;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 0%;
+    margin-bottom: 30px;
+
+}
+
+.main {
+    margin: 40px;
+}
+
+@media(min-width: 900px) {
+    .main {
+    display: flex;  
+    justify-content: space-between;
+    }
+}
+h2 {
+    background-color: black;
+    color: white;
+}
+
+.item {
+    text-align: center; 
+    width: 18%;
+}
+
+.ad {
+    border: 3px solid black;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ h1 a:link
+{
+ color: black;
+ text-decoration: none;
+}
+
+h1 a:active
+{
+ color: black;
+ text-decoration: none;
+}
+
+ a:visited
+{
+ color: black;
+ text-decoration: none;
+}
+h1 a:hover
+{
+ text-decoration: none;
+}
+
+p a:link
+{
+ color: black;
+ text-decoration: none;
+}
+
+p a:active
+{
+ color: black;
+ text-decoration: none;
+}
+
+p a:visited
+{
+ color: black;
+ text-decoration: none;
+}
+p a:hover
+{
+ text-decoration: none;
+}
+
+h2 a:link
+{
+ color: white;
+ text-decoration: none;
+}
+
+h2 a:active
+{
+ color: white;
+ text-decoration: none;
+}
+
+h2 a:visited
+{
+ color: white;
+ text-decoration: none;
+}
+h2 a:hover
+{
+ text-decoration: none;
+}
