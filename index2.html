@@ -20,25 +20,27 @@
       </div>
       <div class="date">
       <p id="date"></p>              <!-- Insert current date-->
+
       <!-- Begin javascript-->
       <script>                       
       var d = new Date();
-
       document.getElementById("date").innerHTML = (("0"+(d.getMonth()+1)).slice(-2)) +"/"+ (("0"+d.getDate()).slice(-2)) +"/"+ (d.getFullYear());
       </script>
+
       </div>
+
     </div>
    <hr>                         <!-- Bottom Line-->
 
     <div class="main">
         
           <div class="item"><h2><a href="forsale.html" style="text-decoration: white">FOR SALE</a></h2>
-            <div class="ad"><p> Lorem ipsum dolor sit amet, no mea aliquid lobortis imperdiet, ad volumus splendide vix. Te sit deleniti salutatus. 
+            <div class="ad" ><span><p onclick="toggleClass (this)"> Lorem ipsum dolor sit amet, no mea aliquid lobortis imperdiet, ad volumus splendide vix. Te sit deleniti salutatus. 
               Cu nihil persecuti nam, odio possim omittantur ea vel. Eam sonet tempor timeam cu. Ut his nibh temporibus,
-              iisque vidisse gloriatur sit at. </p></div>
+              iisque vidisse gloriatur sit at. </p></span></div>
             <div class="ad"><p> Pri oblique scaevola expetendis no, velit inermis mel eu. Ea labores graecis docendi sit. </p></div>
-            <div class="ad"><p><font style="background-color: rgba(223, 247, 8, 0.726)"> Eu nullam dissentiunt cum, quo ex odio tation maluisset, ei platonem gubergren vis.
-              Debet vocent intellegam an mea. </font></p></div>
+            <div class="ad"><p>Eu nullam dissentiunt cum, quo ex odio tation maluisset, ei platonem gubergren vis.
+              Debet vocent intellegam an mea.</p></div>
            <div class="ad"><p> Pri oblique scaevola expetendis no, velit inermis mel eu. Ea labores graecis docendi sit. </p></div>
           </div>
 
@@ -46,11 +48,11 @@
             <div class="ad"><p> Eos in nullam denique fastidii, admodum principes iracundia eum ad, alia deserunt vulputate vel in. 
               Eu vis assentior constituam definitionem. Solum facete ancillae quo at. Cu per timeam fabulas quaerendum. Duo ut labores imperdiet. 
               Mazim dolorum inciderint no pri, erant periculis mnesarchum pri et, ei eum purto volutpat repudiare. </p></div>
-            <div class="ad"><p><font style="background-color: rgba(223, 247, 8, 0.726)"> Docendi accumsan hendrerit vel no, an platonem splendide vix, per cu postea iisque. Vis 
+            <div class="ad"><p> Docendi accumsan hendrerit vel no, an platonem splendide vix, per cu postea iisque. Vis 
                audire evertitur id. Est impetus corrumpit democritum at. Mel no semper latine, ea per odio consetetur. 
               Fugit noster nam cu, veri soluta doctus ex has. Nam cu laudem deserunt accommodare, placerat interpretaris 
               at per, eum falli labitur virtute id. Graeco epicuri abhorreant mel et, pro animal veritus ad. Quo cu tale 
-               delectus. Autem facete epicurei duo ad, ne eros oporteat atomorum nam, sit veri dicant eleifend an. </font></p></div>
+               delectus. Autem facete epicurei duo ad, ne eros oporteat atomorum nam, sit veri dicant eleifend an. </p></div>
             <div class="ad"><p> Lorem ipsum dolor sit amet, no mea aliquid lobortis imperdiet, ad volumus splendide vix. Te sit deleniti salutatus. 
                 Cu nihil persecuti nam, odio possim omittantur ea vel. Eam sonet tempor timeam cu. Ut his nibh temporibus,
                 iisque vidisse gloriatur sit at. </p></div>
@@ -77,9 +79,9 @@
           </div>
 
           <div class="item"><h2><a href="services.html" style="text-decoration: white">SERVICES</a></h2>
-            <div class="ad"><p><font style="background-color: rgba(223, 247, 8, 0.726)"> Cum ut tota vocibus, id pri putant referrentur definitiones, per at suas scaevola 
+            <div class="ad"><p>Cum ut tota vocibus, id pri putant referrentur definitiones, per at suas scaevola 
               atomorum. Gubergren rationibus eu mea. Eu vis alii impedit sadipscing, cu eam vitae nominati. At 
-              blandit omnesque persequeris est. Fuisset repudiare dignissim vix an, esse legendos philosophia cu quo.</font></p></div>
+              blandit omnesque persequeris est. Fuisset repudiare dignissim vix an, esse legendos philosophia cu quo.</p></div>
             <div class="ad"><p> Lorem ipsum dolor sit amet, no mea aliquid lobortis imperdiet, ad volumus splendide vix. Te sit deleniti salutatus. 
               Cu nihil persecuti nam, odio possim omittantur ea vel. Eam sonet tempor timeam cu. Ut his nibh temporibus,
               iisque vidisse gloriatur sit at. </p></div>
@@ -87,6 +89,16 @@
       
     </div>
 
+    <script>
+    function toggleClass (el){
+      if(el.className == "highlighton"){
+          el.className = "highlightoff";
+      } else {
+          el.className= "highlighton";
+      }
+      }
 
+    </script>
+<!-- <script src="app.js"></script> -->
 </body>
 <html>

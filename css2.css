@@ -89,6 +89,7 @@ h2 {
     margin-bottom: 10px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
  h1 a:link
@@ -155,4 +156,15 @@ h2 a:visited
 h2 a:hover
 {
  text-decoration: none;
+}
+
+.highlighton 
+{
+    background-color: rgb(208, 255, 0);
+    display: inline;
+}
+
+.highlightoff
+{
+    background-color: transparent;
 }
